@@ -16,10 +16,10 @@ timezone:
 
 title: Tsung-Yu's Blog  # the main title
 
-tagline: machine learning reseacher # it will display as the sub-title
+tagline: Quantitative Researcher @ VICI Holdings | AI reseacher # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-An interest driven researcher focusing on deep learning based solution. 
+  A minimal, responsive and feature-rich Jekyll theme for technical writing.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
