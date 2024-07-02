@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Guiding a Diffusion Model with a Bad Version of Itself
+title: "&#91;Paper&#93; Guiding a Diffusion Model with a Bad Version of Itself"
 date: '2024-07-02 11:00:00 +0800'
 tags: [diffusion, machine_learning]
 ---
