@@ -18,6 +18,7 @@ In this post, we will dive into the mathematical framework underlying these diff
 
 ## From Forward Process to Backward Process
 
+
 Starting with the diffusion process, we have:
 $$
 dX_t = f(X_t,t)\,dt + \sigma(t)\,dW_t

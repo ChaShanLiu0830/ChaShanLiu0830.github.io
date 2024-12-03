@@ -203,3 +203,13 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+plugins:
+  - jekyll-scholar
+
+scholar:
+  style: apa # Citation style (e.g., apa, ieee, mla)
+  locale: en # Language locale
+  source: ./_bibliography # Folder where your .bib file resides
+  # bibliography: references.bib # Name of your .bib file
+  suppress_author: false # Suppress author names in certain citations

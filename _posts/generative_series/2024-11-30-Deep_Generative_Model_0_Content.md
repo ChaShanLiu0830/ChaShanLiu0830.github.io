@@ -5,6 +5,8 @@ categories: generative_series
 date: '2024-11-30 00:00:00 +800'
 tags: [diffusion, generative model]
 math: true
+bibliography: diffusion_model.bib
+
 # media_subpath: /_image/2024-05-04-[Implement]Improving Diffusion Inverse Problem Solving
 # with Decoupled Noise Annealing/
 ---

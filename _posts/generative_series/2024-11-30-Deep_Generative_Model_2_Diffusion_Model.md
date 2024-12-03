@@ -6,9 +6,11 @@ tags: [diffusion, generative model]
 categories: generative_series
 permalink: /generative_series/diffusion_model/
 math: true
+bibliography: diffusion_model.bib
+# media_subpath: assets/post_images/generative_series
 ---
 
-In this chapter, we are going to dig into the original paper of DDPM []. Denoising Diffusion Probabilistic Models (DDPM) represent a pivotal advancement in diffusion-based generative modeling. Introduced by Ho et al. (2020), DDPM formulates the generative process as a gradual denoising procedure, effectively reversing a forward diffusion process that incrementally adds Gaussian noise to data.
+In this chapter, we are going to dig into the original paper of Denoising Diffusion Probabilistic Models (DDPM)[^1]. DDPM represent a pivotal advancement in diffusion-based generative modeling. Introduced by Ho et al. (2020)[^1], DDPM formulates the generative process as a gradual denoising procedure, effectively reversing a forward diffusion process that incrementally adds Gaussian noise to data.
 
 To simplify, the idea of DDPM is:
 > "Trying to add the image into pure noise, and learn how to denoise back."
@@ -20,6 +22,9 @@ DDPM consists of two main components: the **forward diffusion process** and the 
 ---
 
 ### **2.1 Forward Diffusion Process**
+
+![Backward Process](/assets/post_images/generative_series/backward_process.png)
+*Figure 1: Forward and backward diffusion process. Image Source: {% cite ho2020 %}.*
 
 The forward diffusion process in DDPM is conceptualized as a discrete-time Markov chain that progressively corrupts data by adding Gaussian noise over $T$ time steps. Formally, given an initial data sample $x_0$ drawn from the data distribution $p_{\text{data}}(x_0)$, the forward process generates a sequence of latent variables $x_1, x_2, \ldots, x_T$ via:
 
@@ -44,6 +49,7 @@ where $\alpha_t = 1 - \beta_t$ and $\bar{\alpha}_t = \prod_{s=1}^t \alpha_s$.
 ---
 
 ### **2.2 Backward Diffusion Process**
+
 
 The crux of DDPM lies in reversing the forward diffusion process to generate data. The generative process is modeled as:
 
@@ -161,3 +167,10 @@ Thus, the score function is proportional to $-\epsilon$. Predicting $\epsilon$ d
      \tilde{\beta}_t = \frac{\beta_t (1 - \bar{\alpha}_{t-1})}{1 - \bar{\alpha}_t}.
      $$
      
+
+### Reference
+
+<!-- [^1]: Ho et al. (2020), *Denoising Diffusion Probabilistic Models*. [Link](https://arxiv.org/abs/2006.11239) -->
+<!-- ## References -->
+
+{% bibliography --file diffusion_model.bib --cited %}
