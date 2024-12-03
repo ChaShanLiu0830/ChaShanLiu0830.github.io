@@ -19,5 +19,5 @@ The journey began with DDPM, which introduced a discrete-time diffusion process 
 
 This review meticulously examines the mathematical frameworks underpinning DDPM, SDE-based generative models, PF-ODE, and Consistency Models. By dissecting the roles of stochastic processes, score functions, deterministic flows, and advanced ODE solvers, we aim to provide a unified mathematical perspective that highlights the strengths and interconnections of these methodologies.
 
-
-{% bibliography --file {{ page.bibliography }} --cited %}
+# Reference
+{% bibliography --file introduction.bib --cited %}
